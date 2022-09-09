@@ -1,0 +1,91 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
+    <title>Doccure - HTML Mobile Template</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/swiper/css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/circle.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="page-content change-password-col register-col">
+            <div class="list no-hairlines custom-form">
+                <div class="back-btn"><a href="index.html" class="back link">
+                        <img src="assets/img/left-arrow-big-black.svg" alt=""></a>
+                </div>
+                <div class="register-icon">
+                    <img src="assets/img/register-top-img.png" alt="">
+                </div>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo.svg" alt="doccure"></a>
+                </div>
+                <div class="register-inner-col">
+                    <div class="top-title">
+                        <div>
+                            <h3 class="mb-5">Login Docure</h3>
+                        </div>
+                        <div>
+                            <a href="register.html">Are you Doctor?</a>
+                        </div>
+                    </div>
+                    <ul class="change-list">
+                        <li class="item-content item-input">
+                            <div class="item-col">
+                                <div class="item-input-wrap">
+                                    <form method="post">
+										{% csrf_token %}
+										<div class="form-group form-focus">
+											<label>İstifadəçi adı</label>
+											{% render_field form.username class="form-control" placeholder="Zəhmət olmasa İstifadəçi adınızı daxil edin." %}
+											
+										</div>
+										<div class="form-group form-focus">
+											<label>Şifrə</label>
+											{% render_field form.password class="form-control" placeholder="Zəhmət olmasa şifrənizi daxil edin." %}
+										</div>
+                                        <li class="col-50 save-password">
+                                        </li>
+                                        <li class="col-50 forgot-password">
+                                            <a href="forgot-password.html">Forgot Password ?</a>
+                                        </li>
+                                        <li class="item-content item-input">
+                                            <div class="item-input-wrap submit-btn-col">
+                                                <button type="submit" class="btn btn-submit">Login Now</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <span class="login-back">Don't have an login ? <a href="register.html">Signup Now!</a></span>
+									</form>
+                                    <div class="item-input-icon"><img src="assets/img/lock-icon.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/plugins/swiper/js/swiper.min.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+
+</html>

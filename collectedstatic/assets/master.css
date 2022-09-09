@@ -1,0 +1,15 @@
+@import url('{% static "assets/csss/bootstrap.min.css" %}');
+@import url('{% static "assets/csss/font-awesome.min.css" %}');
+@import url('{% static "assets/csss/owl.carousel.css" %}');
+@import url('{% static "assets/csss/heading.css" %}');
+@import url('{% static "assets/csss/magnific-popup.css" %}');
+@import url('{% static "assets/csss/owl.theme.css" %}');
+@import url('{% static "assets/csss/owl.transitions.css" %}');
+@import url('{% static "assets/csss/nivo-slider.css" %}');
+@import url('{% static "assets/csss/animate.css" %}');
+@import url('{% static "assets/csss/meanmenu.min.css" %}');
+@import url('{% static "assets/csss/main.css" %}');
+@import url('{% static "assets/csss/style.css" %}');
+@import url('{% static "assets/csss/responsive.css" %}');
+
+

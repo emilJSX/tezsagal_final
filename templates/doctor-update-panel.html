@@ -1,0 +1,539 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Doccure</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+	<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/owl.theme.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/nivo-slider.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/bootstrap-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/boxicons.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/boxicons.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+</head>
+
+<body>
+
+	<div class="main-wrapper">
+
+		<div class="top-header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 d-flex justify-content-between">
+						<ul class="d-flex justify-content-between align-items-center">
+							<li>
+								<i class="fas fa-phone-alt"></i>
+								Contact Number : 090 98763456
+							</li>
+							<li>
+								<i class="fas fa-map-marker-alt"></i>
+								Location : 22, South Wales, New York
+							</li>
+						</ul>
+						<ul class="d-flex justify-content-between align-items-center">
+							<li>Mon - Fri : 09:00 AM to 05:00 PM</li>
+							<li>
+								<div class="form-group">
+									<select class="form-select form-control" id="exampleFormControlSelect1">
+										<option>English</option>
+										<option>Arabic</option>
+										<option>Turkish</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<header class="header">
+			<nav class="navbar navbar-expand-lg header-nav">
+				<div class="navbar-header">
+					<a id="mobile_btn" href="javascript:void(0);">
+						<span class="bar-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</a>
+					<a href="index-2.html" class="navbar-brand logo">
+						<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+					</a>
+				</div>
+				<div class="main-menu-wrapper ms-auto">
+					<div class="menu-header">
+						<a href="index-2.html" class="menu-logo">
+							<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+						</a>
+						<a id="menu_close" class="menu-close" href="javascript:void(0);">
+							<i class="fas fa-times"></i>
+						</a>
+					</div>
+					<ul class="main-nav">
+						<li>
+							<a href="index-2.html">Home</a>
+						</li>
+						<li class="has-submenu">
+							<a href="#">Doctors <i class="fas fa-chevron-down"></i></a>
+							<ul class="submenu">
+								<li><a href="doctor-dashboard.html">Doctor Dashboard</a></li>
+								<li><a href="appointments.html">Appointments</a></li>
+								<li><a href="schedule-timings.html">Schedule Timing</a></li>
+								<li><a href="my-patients.html">Patients List</a></li>
+								<li><a href="patient-profile.html">Patients Profile</a></li>
+								<li><a href="chat-doctor.html">Chat</a></li>
+								<li><a href="invoices.html">Invoices</a></li>
+								<li><a href="doctor-profile-settings.html">Profile Settings</a></li>
+								<li><a href="reviews.html">Reviews</a></li>
+								<li><a href="doctor-register.html">Doctor Register</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu active">
+							<a href="#">Patients <i class="fas fa-chevron-down"></i></a>
+							<ul class="submenu">
+								<li class="has-submenu">
+									<a href="#">Doctors</a>
+									<ul class="submenu">
+										<li><a href="map-grid.html">Map Grid</a></li>
+										<li><a href="map-list.html">Map List</a></li>
+									</ul>
+								</li>
+								<li><a href="search.html">Search Doctor</a></li>
+								<li><a href="doctor-profile.html">Doctor Profile</a></li>
+								<li><a href="booking.html">Booking</a></li>
+								<li><a href="checkout.html">Checkout</a></li>
+								<li><a href="booking-success.html">Booking Success</a></li>
+								<li><a href="patient-dashboard.html">Patient Dashboard</a></li>
+								<li><a href="favourites.html">Favourites</a></li>
+								<li><a href="chat.html">Chat</a></li>
+								<li><a href="profile-settings.html">Profile Settings</a></li>
+								<li class="active"><a href="change-password.html">Change Password</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+							<ul class="submenu">
+								<li><a href="voice-call.html">Voice Call</a></li>
+								<li><a href="video-call.html">Video Call</a></li>
+								<li><a href="search.html">Search Doctors</a></li>
+								<li><a href="calendar.html">Calendar</a></li>
+								<li><a href="components.html">Components</a></li>
+								<li class="has-submenu">
+									<a href="invoices.html">Invoices</a>
+									<ul class="submenu">
+										<li><a href="invoices.html">Invoices</a></li>
+										<li><a href="invoice-view.html">Invoice View</a></li>
+									</ul>
+								</li>
+								<li><a href="blank-page.html">Starter Page</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+								<li><a href="contact-us.html">Contact Us</a></li>
+						</li>
+						<li><a href="login.html">Login</a></li>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="forgot-password.html">Forgot Password</a></li>
+					</ul>
+					</li>
+					<li class="has-submenu">
+						<a href="#">Blog <i class="fas fa-chevron-down"></i></a>
+						<ul class="submenu">
+							<li><a href="blog-list.html">Blog List</a></li>
+							<li><a href="blog-grid.html">Blog Grid</a></li>
+							<li><a href="blog-details.html">Blog Details</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="admin/index.html" target="_blank">Admin</a>
+					</li>
+					<li class="login-link">
+						<a href="login.html">Login / Signup</a>
+					</li>
+					</ul>
+				</div>
+				<ul class="nav header-navbar-rht">
+
+					<li class="nav-item dropdown has-arrow logged-item">
+						<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+							<span class="user-img">
+								<img class="rounded-circle" src="assets/img/patients/patient.jpg" width="31"
+									alt="Ryan Taylor">
+							</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end">
+							<div class="user-header">
+								<div class="avatar avatar-sm">
+									<img src="assets/img/patients/patient.jpg" alt="User Image"
+										class="avatar-img rounded-circle">
+								</div>
+								<div class="user-text">
+									<h6>Lula Dillard</h6>
+									<p class="text-muted mb-0">Patient</p>
+								</div>
+							</div>
+							<a class="dropdown-item" href="patient-dashboard.html">Dashboard</a>
+							<a class="dropdown-item" href="profile-settings.html">Profile Settings</a>
+							<a class="dropdown-item" href="login.html">Logout</a>
+						</div>
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+
+
+		<div class="breadcrumb-bar">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-md-12 col-12">
+						<nav aria-label="breadcrumb" class="page-breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Change Password</li>
+							</ol>
+						</nav>
+						<h2 class="breadcrumb-title">Change Profile Data</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+
+						<div class="profile-sidebar">
+							<div class="widget-profile pro-widget-content">
+								<div class="profile-info-widget">
+									<a href="#" class="booking-doc-img">
+										<img src="assets/img/patients/patient.jpg" alt="User Image">
+									</a>
+									<div class="profile-det-info">
+										<h3>Lula Dillard</h3>
+										<div class="patient-details">
+											<h5><i class="fas fa-birthday-cake"></i> 24 Jul 1983, 38 years</h5>
+											<h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, USA</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dashboard-widget">
+								<nav class="dashboard-menu">
+									<ul>
+										<li>
+											<a href="patient-dashboard.html">
+												<i class="fas fa-columns"></i>
+												<span>Dashboard</span>
+											</a>
+										</li>
+										<li>
+											<a href="favourites.html">
+												<i class="fas fa-bookmark"></i>
+												<span>Favourites</span>
+											</a>
+										</li>
+										<li>
+											<a href="chat.html">
+												<i class="fas fa-comments"></i>
+												<span>Message</span>
+												<small class="unread-msg">23</small>
+											</a>
+										</li>
+										<li>
+											<a href="profile-settings.html">
+												<i class="fas fa-user-cog"></i>
+												<span>Profile Settings</span>
+											</a>
+										</li>
+										<li class="active">
+											<a href="change-password.html">
+												<i class="fas fa-lock"></i>
+												<span>Change Password</span>
+											</a>
+										</li>
+										<li>
+											<a href="index-2.html">
+												<i class="fas fa-sign-out-alt"></i>
+												<span>Logout</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-7 col-lg-8 col-xl-9">
+						<div class="card">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-12 col-lg-6">
+
+										<form method="post" enctype="multipart/form-data">
+											{% csrf_token %}
+											{{form.as_p}}
+											{% for bird in object_list %}
+        									<p>{{bird.address}}: {{bird.mobile}}</p>
+    										{% endfor %}
+											<button type="submit" class="btn btn-warning" value="Update">Update</button>
+										  </form>
+
+										  <form class="form-horizontal" method="POST" action="">
+											{% csrf_token %}
+											{{ formset.management_form }}
+											{% for form in formset %}
+											<div class="row form-row spacer">
+												<div class="col-2">
+													<label>{{form.name.label}}</label>
+												</div>
+												<div class="col-4">
+													<div class="input-group">
+														{{form.name}}
+														<div class="input-group-append">
+														<button class="btn btn-success add-form-row">+</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										{% endfor %}
+										<div class="row spacer">
+											<div class="col-4 offset-2">
+												<button type="submit" class="btn btn-block btn-primary">Update</button>
+											</div>
+										</div>
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<footer class="footer">
+
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+
+							<div class="footer-widget footer-about">
+								<div class="footer-logo">
+									<img src="assets/img/logo-white.png" alt="logo">
+								</div>
+								<div class="footer-about-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua. </p>
+									<div class="social-icon">
+										<ul>
+											<li>
+												<a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><i class="fab fa-google-plus-g"></i> </a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-6">
+
+							<div class="footer-widget footer-menu">
+								<h2 class="footer-title">For Patients</h2>
+								<ul>
+									<li><a href="search.html">Search for Doctors</a></li>
+									<li><a href="login.html">Login</a></li>
+									<li><a href="register.html">Register</a></li>
+									<li><a href="booking.html">Booking</a></li>
+									<li><a href="patient-dashboard.html">Patient Dashboard</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-6">
+
+							<div class="footer-widget footer-menu">
+								<h2 class="footer-title">For Doctors</h2>
+								<ul>
+									<li><a href="appointments.html">Appointments</a></li>
+									<li><a href="chat.html">Chat</a></li>
+									<li><a href="login.html">Login</a></li>
+									<li><a href="doctor-register.html">Register</a></li>
+									<li><a href="doctor-dashboard.html">Doctor Dashboard</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-6">
+
+							<div class="footer-widget footer-menu">
+								<h2 class="footer-title">Contact Us</h2>
+								<ul>
+									<li>
+										<p>
+											<i class="far fa-compass"></i>
+											3556 Beech Street, San Francisco, California, CA 94108
+										</p>
+									</li>
+									<li>
+										<p>
+											<i class="fas fa-mobile-alt"></i>
+											+1 315 369 5943
+										<p>
+									</li>
+									<li>
+										<p>
+											<i class="far fa-envelope-open"></i>
+											<a href="../cdn-cgi/l/email-protection.html" class="__cf_email__"
+												data-cfemail="a9cdc6cacadcdbcce9ccd1c8c4d9c5cc87cac6c4">[email&#160;protected]</a>
+										<p>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row d-flex justify-content-between col-md-12">
+						<p>© 2020 Doccure. All rights reserved.</p>
+						<a href="term-condition.html">Terms and Conditions Policy</a>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+
+	</div>
+
+
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+	<script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+	<script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+	<script src="assets/js/script.js"></script>
+
+</body>
+
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add MemberShip</title>
+</head>
+<body>
+    <h1>Add a new MemberShip</h1>
+    <form id="form-container" method="POST">
+        {% csrf_token %}
+        {{membership_formset.management_form}}
+        {% for form in membership_formset %}
+            <div class="membership-form">
+                {{form.as_p}}
+                <hr>
+            </div>
+        {% endfor %}
+
+		{% for formi in formik %}
+            <div class="membership-formik">
+                {{formi.as_p}}
+                <hr>
+            </div>
+        {% endfor %}
+        <button id="add-form" type="button">Add Another MemberShip</button>
+		<button id="add-formik" type="button">Add Another MemberShip</button>
+        <button type="submit">Create MemberShips</button>        
+    </form>
+    </body>
+
+    <script>
+        let membershipForm = document.querySelectorAll(".membership-form")
+        let container = document.querySelector("#form-container")
+        let addButton = document.querySelector("#add-form")
+        let totalForms = document.querySelector("#id_form-TOTAL_FORMS")
+
+        let formNum = membershipForm.length-1
+        addButton.addEventListener('click', addForm)
+
+        function addForm(e){
+            e.preventDefault()
+
+            let newForm = membershipForm[0].cloneNode(true)
+            let formRegex = RegExp(`form-(\\d){1}-`,'g')
+
+            formNum++
+            newForm.innerHTML = newForm.innerHTML.replace(formRegex, `form-${formNum}-`)
+            container.insertBefore(newForm, addButton)
+            
+            totalForms.setAttribute('value', `${formNum+1}`)
+        }
+    </script>
+
+<script>
+	let membershipForms = document.querySelectorAll(".membership-formik")
+	let containers = document.querySelector("#form-container")
+	let addButtons = document.querySelector("#add-formik")
+	let totalFormss = document.querySelector("#id_form-TOTAL_FORMS")
+
+	let formNums = membershipForms.length-1
+	addButtons.addEventListener('click', addForm)
+
+	function addForm(e){
+		e.preventDefault()
+
+		let newForms = membershipForms[0].cloneNode(true)
+		let formRegexs = RegExp(`form-(\\d){1}-`,'g')
+
+		formNums++
+		newForms.innerHTML = newForms.innerHTML.replace(formRegexs, `form-${formNums}-`)
+		containers.insertBefore(newForms, addButtons)
+		
+		totalFormss.setAttribute('value', `${formNums+1}`)
+	}
+</script>
+</html>

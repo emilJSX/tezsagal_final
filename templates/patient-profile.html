@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
+    <title>Doccure - HTML Mobile Template</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/swiper/css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/circle.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="side-menu" id="sidebar-menu">
+            <div class="close-btn"><span class="material-icons">close</span></div>
+            <ul>
+                <li>
+                    <a class="" href="index.html">
+                        <span class="material-icons">dashboard</span>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="appointments.html">
+                        <span class="material-icons">date_range</span>
+                        Appointments
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="patients-list.html">
+                        <span class="material-icons">person</span>
+                        My Patients
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="schedule-timings.html">
+                        <span class="material-icons">access_time</span>
+                        Schedule Timings
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="invoices.html">
+                        <span class="material-icons">insert_drive_file</span>
+                        Invoices
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="pages.html">
+                        <span class="material-icons">pages</span>
+                        Pages
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="chat.html">
+                        <span class="material-icons">message</span>
+                        Message
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="">
+                        <span class="material-icons">settings</span>
+                        Profile Settings
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="social-media.html">
+                        <span class="material-icons">share</span>
+                        Social Media
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="change-password.html">
+                        <span class="material-icons">lock_open</span>
+                        Change Password
+                    </a>
+                </li>
+            </ul>
+            <a class="sidebar-logout" href="login.html"><span><img src="assets/img/open-account-logout.svg"
+                        alt=""></span>Logout</a>
+        </div>
+        <div class="navbar two-action no-hairline">
+            <div class="navbar-inner d-flex align-items-center">
+                <div class="left">
+                    <a href="#" class="link icon-only">
+                        <i class="custom-hamburger">
+                            <span><b></b></span>
+                        </i>
+                    </a>
+                </div>
+                <div class="sliding custom-title">Patients Appointments</div>
+                <div class="right d-flex">
+                    <a href="notifications.html" class="link icon-only"><i class="material-icons">notifications</i></a>
+                    <a href="#" data-bs-toggle="dropdown" aria-expanded="true" class="link"><i
+                            class="material-icons">more_vert</i></a>
+                    <div class="dropdown-menu dropdown-menu-end header_drop_icon">
+                        <a href="doctor-profile.html" class="dropdown-item">My Profile</a>
+                        <a href="profile-settings.html" class="dropdown-item">Settings</a>
+                        <a href="login.html" class="dropdown-item">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content pt-0">
+
+            <div class="doctor-profile-tab pb-0">
+                <div class="container">
+                    <div class="tab-col">
+                        <ul class="nav nav-tabs">
+                            <li><a href="#Appointments" data-bs-toggle="tab">Appointments</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Appointments">
+                            <div class="panel panel-default">
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="patient-appointments-col">
+                                            <div class="patient-widget">
+                                                <div class="patient-top-details">
+                                                    <div>
+                                                        <span class="invoice-id">Booking Date - 16 Mar 2020</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="date-col">Dental</span>
+                                                    </div>
+                                                </div>
+                                                <div class="invoice-widget">
+                                                    <div class="pat-info-left">
+                                                        <div class="patient-img">
+                                                            <a href="doctor-profile.html">
+                                                                <img src="assets/img/doctors/doctor-thumb-01.jpg"
+                                                                    class="img-fluid" alt="User Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="pat-info-cont">
+                                                            <h4 class="pat-name"><a href="doctor-profile.html">Dr. Ruby
+                                                                    Perrin</a></h4>
+                                                            <div class="patient-details-col">
+                                                                <span class="">Appt Date - 22 Mar 2020 , 4:30 PM</span>
+                                                            </div>
+                                                            <div class="hour-col">
+                                                                <div>
+                                                                    <span class="hours">$150</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="status-col">
+                                                    <div class="status-btn">
+                                                        <a href="#" class="btn success"><i><img
+                                                                    src="assets/img/icon-checkmark.svg"
+                                                                    alt=""></i>Accept</a>
+                                                    </div>
+                                                    <div class="status-btn">
+                                                        <a href="#" class="btn print"><i><img
+                                                                    src="assets/img/icon-metro-printer.svg"
+                                                                    alt=""></i>Cancel</a>
+                                                    </div>
+                                                    <div class="status-btn">
+                                                        <a href="#" class="btn view-eye"><i><img
+                                                                    src="assets/img/icon-awesome-eye.svg"
+                                                                    alt=""></i>Edit time</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="patient-widget">
+                                                <div class="patient-top-details">
+                                                    <div>
+                                                        <span class="invoice-id">Booking Date - 16 Mar 2020</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="date-col">Dental</span>
+                                                    </div>
+                                                </div>
+                                                <div class="invoice-widget">
+                                                    <div class="pat-info-left">
+                                                        <div class="patient-img">
+                                                            <a href="doctor-profile.html">
+                                                                <img src="assets/img/doctors/doctor-thumb-01.jpg"
+                                                                    class="img-fluid" alt="User Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="pat-info-cont">
+                                                            <h4 class="pat-name"><a href="doctor-profile.html">Dr. Ruby
+                                                                    Perrin</a></h4>
+                                                            <div class="patient-details-col">
+                                                                <span class="">Appt Date - 22 Mar 2020 , 4:30 PM</span>
+                                                            </div>
+                                                            <div class="hour-col">
+                                                                <div>
+                                                                    <span class="hours">$150</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="status-col">
+                                                    <div class="status-btn">
+                                                        <a href="#" class="btn success"><i><img
+                                                                    src="assets/img/icon-checkmark.svg"
+                                                                    alt=""></i>Accept</a>
+                                                    </div>
+                                                    <div class="status-btn">
+                                                        <a href="#" class="btn print"><i><img
+                                                                    src="assets/img/icon-metro-printer.svg"
+                                                                    alt=""></i>Cancel</a>
+                                                    </div>
+                                                    <div class="status-btn">
+                                                        <a href="#" class="btn view-eye"><i><img
+                                                                    src="assets/img/icon-awesome-eye.svg"
+                                                                    alt=""></i>Edit time</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="patient-widget">
+                                                <div class="patient-top-details">
+                                                    <div>
+                                                        <span class="invoice-id">Booking Date - 16 Mar 2020</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="date-col">Dental</span>
+                                                    </div>
+                                                </div>
+                                                <div class="invoice-widget">
+                                                    <div class="pat-info-left">
+                                                        <div class="patient-img">
+                                                            <a href="doctor-profile.html">
+                                                                <img src="assets/img/doctors/doctor-thumb-01.jpg"
+                                                                    class="img-fluid" alt="User Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="pat-info-cont">
+                                                            <h4 class="pat-name"><a href="doctor-profile.html">Dr. Ruby
+                                                                    Perrin</a></h4>
+                                                            <div class="patient-details-col">
+                                                                <span class="">Appt Date - 22 Mar 2020 , 4:30 PM</span>
+                                                            </div>
+                                                            <div class="hour-col">
+                                                                <div>
+                                                                    <span class="hours">$150</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="status-col">
+                                                    <div class="status-btn">
+                                                        <a href="#" class="btn success"><i><img
+                                                                    src="assets/img/icon-checkmark.svg"
+                                                                    alt=""></i>Accept</a>
+                                                    </div>
+                                                    <div class="status-btn">
+                                                        <a href="#" class="btn print"><i><img
+                                                                    src="assets/img/icon-metro-printer.svg"
+                                                                    alt=""></i>Cancel</a>
+                                                    </div>
+                                                    <div class="status-btn">
+                                                        <a href="#" class="btn view-eye"><i><img
+                                                                    src="assets/img/icon-awesome-eye.svg"
+                                                                    alt=""></i>Edit time</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/plugins/swiper/js/swiper.min.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+
+</html>
